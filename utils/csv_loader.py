@@ -8,7 +8,7 @@ def load_temperature_data(folder_path):
     """
     data = {}
 
-    if not os.path.exists(folder_path):
+    if not os.path.exists(folder_path): #if path doesn't exists then this will execute and return data
         print(f"Folder not found: {folder_path}")
         return data
 
