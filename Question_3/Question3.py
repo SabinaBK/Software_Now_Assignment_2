@@ -27,5 +27,5 @@ angle = 360/sides
 for _ in range(sides):
   egde(length, depth)
   right(angle)
+done()
 
-Screen.exitonclick()
