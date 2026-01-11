@@ -12,7 +12,12 @@ sides = int(input("Enter the number of sides: "))
 length = int(input("Enter the side length: "))
 #Prompts the user to enter the recursion depth.
 depth = int(input("Enter the recursion depth: "))
+
+# Set the turtle drawing speed. The smaller the number, the slower the drawing speed. The number 0 is the fastest.
 speed(0)
+# Lift the pen so the turtle can move without drawing.
+# Move the turtle to the position (-150,150) without drawing.
+# Lower the pen so drawing begins.
 penup()
 goto(-150, 150)
 pendown()
@@ -28,11 +33,12 @@ def egde(length, depth):
     egde(length, depth - 1)
     right(60)
     egde(length, depth - 1)
-angle = 360/sides
+angle = 360 / sides
 for _ in range(sides):
   egde(length, depth)
   right(angle)
 done()
+
 
 
 
