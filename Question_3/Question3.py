@@ -1,6 +1,6 @@
 """ Create a program that uses a recursive function to generate a geometric pattern using
 Python's turtle graphics. The pattern starts with a regular polygon and recursively
-modifies each edge to create intricate designs.
+modifies each draw_recursive_edge to create intricate designs.
 """
 
 
@@ -21,21 +21,21 @@ speed(0)
 penup()
 goto(-150, 150)
 pendown()
-def egde(length, depth):
+def draw_recursive_edge(length, depth):
   if depth == 0:
     forward(length)
   else:
     length /= 3
-    egde(length, depth - 1)
+    draw_recursive_edge(length, depth - 1)
     right(60)
-    egde(length, depth - 1)
+    draw_recursive_edge(length, depth - 1)
     left(120)
-    egde(length, depth - 1)
+    draw_recursive_edge(length, depth - 1)
     right(60)
-    egde(length, depth - 1)
+    draw_recursive_edge(length, depth - 1)
 angle = 360 / sides
 for _ in range(sides):
-  egde(length, depth)
+  draw_recursive_edge(length, depth)
   right(angle)
 done()
 
