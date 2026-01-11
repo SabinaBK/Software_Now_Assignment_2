@@ -1,3 +1,8 @@
+"""
+verification.py
+---------------
+Verifies that decrypted text matches the original raw text.
+"""
 
 
 from __future__ import annotations
