@@ -1,11 +1,7 @@
-# Import csv module to read CSV files
-import csv
+import csv #Importing csv module to read csv files
+import os  # this line impots os module for file directory path operations
 
-# Import os module to work with folders and file paths
-import os
-
-# This function loads temperature data from CSV files inside a folder
-def load_temperature_data(folder_path):
+def load_temperature_data(folder_path): # Defines function folder_path as parameter to load temperature data from csv.
     """
     This function:
     - Reads all CSV files from the given folder
