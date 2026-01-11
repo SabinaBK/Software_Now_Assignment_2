@@ -1,7 +1,7 @@
-import csv
-import os
+import csv #Importing csv module to read csv files
+import os  # this line impots os module for file directory path operations
 
-def load_temperature_data(folder_path):
+def load_temperature_data(folder_path): # Defines function folder_path as parameter to load temperature data from csv.
     """
     Load CSV files where each row contains a station's monthly averages.
     Returns a dictionary: {station_name: [Jan, Feb, ..., Dec]}
