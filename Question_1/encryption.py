@@ -62,7 +62,7 @@ def encrypt_char(ch: str, shift1: int, shift2: int, *args, **kwargs) -> str:
 
 
 def encrypt_file(
-    input_path: str | Path = "raw_text.txt",
+    input_path: str | Path = "Question_1/raw_text.txt",
     output_path: str | Path = "encrypted_text.txt",
     *,
     shift1: int,

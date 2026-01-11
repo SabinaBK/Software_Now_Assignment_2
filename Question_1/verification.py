@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 def verify_files(
-    original_path: str | Path = "raw_text.txt",
+    original_path: str | Path = "Question_1/raw_text.txt",
     decrypted_path: str | Path = "decrypted_text.txt",
     *args,
     **kwargs
