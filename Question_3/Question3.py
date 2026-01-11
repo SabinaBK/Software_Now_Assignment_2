@@ -4,13 +4,13 @@ modifies each edge to create intricate designs.
 """
 
 
-#Import all functions and classes from the turtle graphics library so they can be used directly
+#Import all functions and classes from the turtle graphics library so they can be used directly.
 from turtle import *
-#Prompt the user to enter the number of sides of the initial polygon
+#Prompt the user to enter the number of sides of the initial polygon.
 sides = int(input("Enter the number of sides: "))
 #Prompt the user to enter the length of each side of the polygon.
 length = int(input("Enter the side length: "))
-#Prompts the user to enter the recursion depth
+#Prompts the user to enter the recursion depth.
 depth = int(input("Enter the recursion depth: "))
 speed(0)
 penup()
@@ -33,6 +33,7 @@ for _ in range(sides):
   egde(length, depth)
   right(angle)
 done()
+
 
 
 
