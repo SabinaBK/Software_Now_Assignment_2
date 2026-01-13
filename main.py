@@ -91,7 +91,7 @@ if ranges:
 # Calculate standard deviation of temperature for each station
 stddevs = station_stddev(data)
 
-# Check if standard deviation data exists
+# Check if standard deviation data exists or not
 if stddevs:
     
     # Find the minimum standard deviation (most stable station)
