@@ -35,10 +35,10 @@ from utils.stats import seasonal_averages, station_ranges, station_stddev
 
 
 # Folder name where temperature CSV files are stored
-TEMP_FOLDER = "Questiion_2/temperatures"
+TEMP_FOLDER = "Question_2/temperatures"
 
 # Folder name where output text files will be saved
-OUTPUT_FOLDER = "Questiion_2/output"
+OUTPUT_FOLDER = "Question_2/output"
 
 # Create the output folder if it does not already exist, exist_ok=True prevents error if the folder already exist
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
