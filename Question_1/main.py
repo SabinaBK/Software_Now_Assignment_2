@@ -26,7 +26,7 @@ def _get_int(prompt: str, *, min_value=None, max_value=None, **kwargs) -> int:
     - min_value: minimum allowed value
     - max_value: maximum allowed value
     """
-    while True: # This line starts an infinite loop to until valid input is recieved.
+    while True: # This line starts an infinite loop to until valid input is obtained.
         try:
             value = int(input(prompt).strip()) # Prompt user and convert input to integer and strip removes whitespace.
 
