@@ -1,2 +1,0 @@
-Most Stable: Station DARWIN-AIRPORT: StdDev 1.0°C
-Most Variable: Station WYALONG-POST-OFFICE: StdDev 7.2°C

@@ -35,10 +35,10 @@ from utils.stats import seasonal_averages, station_ranges, station_stddev
 
 
 # Folder name where temperature CSV files are stored
-TEMP_FOLDER = "temperatures"
+TEMP_FOLDER = "Question_2/temperatures"
 
 # Folder name where output text files will be saved
-OUTPUT_FOLDER = "output"
+OUTPUT_FOLDER = "Question_2/output"
 
 # Create the output folder if it does not already exist, exist_ok=True prevents error if the folder already exist
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
@@ -49,7 +49,7 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 data = load_temperature_data(TEMP_FOLDER)
 
 # Seasonal Average Calculation
-# Calculate average temperature for each season
+#For each season calculate average temperature
 season_avg = seasonal_averages(data)
 
 #To write seasonal averages ,files is created naming average_temp.txt
