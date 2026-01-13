@@ -1,13 +1,15 @@
 """
 main.py
 -------
-Main entry point for Assignment 2.
+Main entry point for Assignment 2 Question 1.
 
 Program flow:
 1. Prompt user for shift1 and shift2
 2. Encrypt raw_text.txt
 3. Decrypt encrypted_text.txt
 4. Verify decrypted output matches original
+
+Run main.py to launch the program
 """
 
 from __future__ import annotations
