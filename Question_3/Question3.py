@@ -51,7 +51,7 @@ def main ():
   screen.title("Recursive Geometric Pattern") # Set the title of the window
   screen.bgcolor("white") # Set background color to white
 
-#Settig up Trurtle
+#Settig up Turtle
   pen = turtle.Turtle()
   pen.speed(0) # Set the fastest drawing speed
   pen.color("black") # Set pen color to black
@@ -84,6 +84,7 @@ def main ():
   
 if __name__ == "__main__": #Run the main function if this script is executed directly
   main()
+
 
 
 
