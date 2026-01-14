@@ -1,4 +1,5 @@
 """
+Group: DAN/EXT 14
 Main program to draw recursive geometric patterns using turtle graphics.
 """
 import turtle
