@@ -19,43 +19,41 @@ specified depth.
 
 
 #Import all functions and classes from the turtle graphics library so they can be used directly.
-import turtle
+from turtle import *
 
 
-def draw_recursive_edge(t,length, depth):
+def draw_recursive_edge(length, depth):
   
   if depth == 0:
-    t.forward(length)
+    forward(length)
   else:
     segment= length / 3
 
-    draw_recursive_edge(t,segment, depth - 1) #Segment 1
+    draw_recursive_edge(segment, depth - 1) #Segment 1
     
-    t.right(60) #turn inward
+    right(60) #turn inward
     
     #Segment 2 down into indentation 
-    draw_recursive_edge(t,segment, depth - 1)
+    draw_recursive_edge(segment, depth - 1)
     
-    t.left(120) # turns outward to come back up
+    left(120) # turns outward to come back up
     
     #segment 3 up out of indentation
-    draw_recursive_edge(t,segment, depth - 1)
-    t.right(60)
+    draw_recursive_edge(segment, depth - 1)
+    right(60)
     
     #Segment 4
-    draw_recursive_edge(t,segment, depth - 1)
+    draw_recursive_edge(segment, depth - 1)
     
 def main ():
   # setting up screen
-  screen = turtle.Screen() #Create a screen object
-  screen.title("Recursive Geometric Pattern") # Set the title of the window
-  screen.bgcolor("white") # Set background color to white
+  Screen().title("Recursive Geometric Pattern") # Set the title of the window
+  Screen().bgcolor("white") # Set background color to white
 
-#Settig up Trurtle
-  pen = turtle.Turtle()
-  pen.speed(0) # Set the fastest drawing speed
-  pen.color("black") # Set pen color to black
-  pen.pensize(1) 
+#Settig up Turtle
+  speed(0) # Set the fastest drawing speed
+  color("black") # Set pen color to black
+  pensize(1) 
   
   #Get user inputs for sides, length, and depth
   try:
@@ -67,27 +65,20 @@ def main ():
     return
   
   #Center the drawing shape position
-  pen.penup()
-  pen.goto(-length / 2, length / 2) # Move to starting position
-  pen.pendown() 
+  penup()
+  goto(-length / 2, length / 2) # Move to starting position
+  pendown() 
   
   #Draw the recursive polygon
   angle = 360 / sides 
   for _ in range(sides): # For each side of the polygon
-    draw_recursive_edge(pen,length, depth)
-    pen.right(angle) # Turn the turtle to the right to form the polygon.
+    draw_recursive_edge(length, depth)
+    right(angle) # Turn the turtle to the right to form the polygon.
 
 
-  pen.hideturtle()
+  hideturtle()
     #Complete the drawing and wait for user to close the windowcreen.mainloop()
-  screen.mainloop()
+  mainloop()
   
 if __name__ == "__main__": #Run the main function if this script is executed directly
   main()
-
-
-
-
-
-
-
