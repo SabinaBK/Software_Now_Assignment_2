@@ -27,7 +27,7 @@ def draw_recursive_edge(t,length, depth):
   if depth == 0:
     t.forward(length)
   else:
-    segment= length / 3
+    segment= length / 3 #hfh
 
     draw_recursive_edge(t,segment, depth - 1) #Segment 1
     
