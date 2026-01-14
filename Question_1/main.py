@@ -26,11 +26,11 @@ def _get_int(prompt: str, *, min_value=None, max_value=None, **kwargs) -> int:
     - min_value: minimum allowed value
     - max_value: maximum allowed value
     """
-    while True: # This line starts an infinite loop to until valid input is obtained.
+    while True: # To start an infinite loop to until valid input is obtained
         try:
             value = int(input(prompt).strip()) # Prompt user and convert input to integer and strip removes whitespace.
 
-            # Validate range if provided
+            # To validate range if provided
             if (min_value is not None and value < min_value) or \
                (max_value is not None and value > max_value):
                 raise ValueError
@@ -45,25 +45,25 @@ def main(*args, **kwargs) -> None:
     """
     Executes the full encryption-decryption-verification pipeline.
     """
-    # Get shift values from user
+    # To get shift values from user
     shift1 = _get_int("Enter shift1 value (integer): ")
     shift2 = _get_int("Enter shift2 value (integer): ")
 
     # Shared options (extensible)
     options = {"encoding": kwargs.get("encoding", "utf-8")}
 
-    # Perform encryption
+    # To perform encryption
     encrypt_file(shift1=shift1, shift2=shift2, **options)
     print("[INFO] Encryption complete. Encrypted text saved to 'encrypted_text.txt'.")
 
-    # Perform decryption
+    # To perform decryption
     decrypt_file(shift1=shift1, shift2=shift2, **options)
     print("[INFO] Decryption complete. Decrypted text saved to 'decrypted_text.txt'.")
 
-    # Verify correctness
+    # To verify correctness
     verify_files(**options)
 
 
-# Run only when executed directly (not when imported)
+# To run only when executed directly (not when imported)
 if __name__ == "__main__":
     main()
