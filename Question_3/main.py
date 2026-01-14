@@ -8,7 +8,7 @@ from config import (
     MIN_SIDES, MAX_SIDES, MIN_LENGTH, MAX_LENGTH, MIN_DEPTH, MAX_DEPTH
 )
 
-def get_user_input(): #geetting user input for side,length, and depth
+def get_user_input(): #getting user input for side,length, and depth
    
     try:
         sides = int(input("Enter the number of sides (0-10): "))
@@ -61,9 +61,9 @@ def draw_pattern(pen, sides, length, depth):
     for _ in range(sides):
         draw_recursive_edge(pen, length, depth)
         pen.right(angle)
-
+# To run the main program
 def main():
-    """Main program execution."""
+
     print("=== Recursive Geometric Pattern Generator ===\n")
     
     # To setup screen and turtle pen
