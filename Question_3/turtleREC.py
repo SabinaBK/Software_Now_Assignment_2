@@ -1,5 +1,5 @@
 
-import turtle
+import turtle # Import the turtle graphics library
 
 def draw_recursive_edge(t, length, depth): # to draw one edge with recursion
 
@@ -11,7 +11,7 @@ def draw_recursive_edge(t, length, depth): # to draw one edge with recursion
         # Segment 1
         draw_recursive_edge(t, segment, depth - 1)
         
-        t.right(60)  # turn inward
+        t.right(60)  # to turn inward
         
         # Segment 2 down into indentation
         draw_recursive_edge(t, segment, depth - 1)

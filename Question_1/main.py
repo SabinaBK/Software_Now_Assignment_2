@@ -1,4 +1,5 @@
 """
+Group: DAN/EXT 14
 main.py
 -------
 Main entry point for Assignment 2 Question 1.
